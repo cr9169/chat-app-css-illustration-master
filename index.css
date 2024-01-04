@@ -25,12 +25,15 @@ html {
   --clr-s-400: hsl(289, 100%, 72%);
   --clr-s-800: hsl(271, 36%, 24%);
 
-  --fs-p: 0.75 rem;
-  --fs-h: 1.5rem;
+  --fs-primary: 0.5 rem;
+  --fs-heading: 1rem;
+  --fs-big-heading: 2rem;
 
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-bold: 700;
+
+  --ff-primary: "Rubik", sans-serif;
 }
 
 html,
@@ -42,9 +45,6 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: var(--clr-s-100);
-  position: relative;
-  display: flex;
-  flex-direction: column;
 }
 
 img,
@@ -71,9 +71,19 @@ h6 {
   overflow-wrap: break-word;
 }
 
+.back-items {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
 .light-grey-blob {
   height: 90%;
-  width: 30rem;
+  width: 30%;
   background-color: var(--clr-s-200);
   position: absolute;
   right: -10rem;
@@ -84,7 +94,7 @@ h6 {
 
 .purple-blob {
   height: 90%;
-  width: 30rem;
+  width: 30%;
   background: linear-gradient(
     to top,
     var(--clr-p-gradient-600),
@@ -95,4 +105,56 @@ h6 {
   top: 0;
   border-bottom-left-radius: 15rem;
   border-bottom-right-radius: 15rem;
+}
+
+.front-items {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.phone {
+  display: flex;
+}
+
+.paragraph {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.heading {
+  font-family: "Rubik", sans-serif;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-big-heading);
+}
+
+.content {
+  font-family: "Rubik", sans-serif;
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-primary);
+  line-height: 1.5;
+  color: var(--clr-p-text-200);
+}
+
+@media (max-width: 800px) {
+  .front-items {
+    flex-direction: column;
+  }
+
+  .paragraph {
+    align-items: center;
+  }
+
+  .content {
+    text-align: center;
+  }
 }
