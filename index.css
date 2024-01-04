@@ -71,19 +71,19 @@ h6 {
   overflow-wrap: break-word;
 }
 
-.purple-blob {
-  height: 40rem;
+.light-grey-blob {
+  height: 90%;
   width: 30rem;
   background-color: var(--clr-s-200);
   position: absolute;
-  right: -2.5rem;
+  right: -10rem;
   bottom: 0;
   border-top-left-radius: 15rem;
   border-top-right-radius: 15rem;
 }
 
-.light-grey-blob {
-  height: 40rem;
+.purple-blob {
+  height: 90%;
   width: 30rem;
   background: linear-gradient(
     to top,
@@ -91,7 +91,7 @@ h6 {
     var(--clr-p-text-300)
   );
   position: absolute;
-  left: -2.5rem;
+  left: -5rem;
   top: 0;
   border-bottom-left-radius: 15rem;
   border-bottom-right-radius: 15rem;
