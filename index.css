@@ -204,6 +204,7 @@ h6 {
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+  margin-bottom: 5rem;
 }
 
 .heading {
@@ -231,5 +232,9 @@ h6 {
 
   .content {
     text-align: center;
+  }
+
+  .front-items {
+    gap: 5rem;
   }
 }
