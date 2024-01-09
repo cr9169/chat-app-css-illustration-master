@@ -21,11 +21,12 @@ html {
   --clr-p-gradient-600: hsl(264, 100%, 61%);
 
   --clr-s-100: hsl(0, 0%, 100%);
+  --clr-s-150: hsl(0, 0%, 98%);
   --clr-s-200: hsl(270, 20%, 96%);
   --clr-s-400: hsl(289, 100%, 72%);
   --clr-s-800: hsl(271, 36%, 24%);
 
-  --fs-primary: 0.5 rem;
+  --fs-primary: 0.5rem;
   --fs-heading: 1rem;
   --fs-big-heading: 2rem;
 
@@ -44,7 +45,8 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--clr-s-100);
+  background-color: var(--clr-s-150);
+  font-family: var(--ff-primary);
 }
 
 img,
@@ -109,18 +111,91 @@ h6 {
 
 .front-items {
   position: absolute;
-  left: 40%;
-  top: 40%;
+  left: 20%;
+  top: 10%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  gap: 10rem;
   z-index: 2;
 }
 
 .phone {
+  height: 40rem;
+  background-color: var(--clr-s-200);
+  border: 1rem solid var(--clr-s-100);
+  border-radius: 2rem;
   display: flex;
+  flex-direction: column;
+}
+
+.user-heading {
+  position: relative;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    var(--clr-p-gradient-600),
+    var(--clr-p-text-300)
+  );
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 2.5rem 1rem 1rem 1rem;
+}
+
+.phone-white-blob {
+  position: absolute;
+  top: 0;
+  height: 25%;
+  width: 60%;
+  background-color: var(--clr-s-100);
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+}
+
+.user-heading-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.app-icon-three-dots,
+.app-icon-back {
+  width: 1rem;
+  height: 1rem;
+}
+
+.app-icon-three-dots {
+  margin-left: auto;
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.15rem solid var(--clr-s-100);
+  border-radius: 2rem;
+}
+
+.spans {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-span {
+  font-size: var(--fs-heading);
+  color: var(--clr-s-100);
+}
+
+.status-span {
+  font-size: var(--fs-primary);
+  color: var(--clr-p-text-100);
 }
 
 .paragraph {
@@ -140,7 +215,7 @@ h6 {
 .content {
   font-family: "Rubik", sans-serif;
   font-weight: var(--fw-regular);
-  font-size: var(--fs-primary);
+  font-size: var(--fs-heading);
   line-height: 1.5;
   color: var(--clr-p-text-200);
 }
