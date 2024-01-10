@@ -25,6 +25,7 @@ html {
   --clr-s-200: hsl(270, 20%, 96%);
   --clr-s-400: hsl(289, 100%, 72%);
   --clr-s-800: hsl(271, 36%, 24%);
+  --clr-s-900: hsl(0, 0%, 0%);
 
   --fs-primary: 0.5rem;
   --fs-heading: 1rem;
@@ -123,6 +124,7 @@ h6 {
 }
 
 .phone {
+  width: 28rem;
   background-color: var(--clr-s-200);
   border: 1rem solid var(--clr-s-100);
   border-radius: 2rem;
@@ -295,7 +297,35 @@ h6 {
 }
 
 .message-typing-box {
+  width: 92.5%;
+  background-color: var(--clr-s-100);
+  align-self: center;
+  margin: 1rem 0 1.25rem 0;
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 1rem;
+  border-radius: 5rem;
+}
 
+.message-typing-box input {
+  border: none;
+  flex-grow: 1;
+}
+
+.message-typing-box-send-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--clr-s-900);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: auto;
+}
+
+.message-typing-box img {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .paragraph {
