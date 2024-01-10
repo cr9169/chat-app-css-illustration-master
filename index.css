@@ -28,6 +28,7 @@ html {
 
   --fs-primary: 0.5rem;
   --fs-heading: 1rem;
+  --fs-medium-heading: 1.5rem;
   --fs-big-heading: 2rem;
 
   --fw-regular: 400;
@@ -48,9 +49,6 @@ body {
   background-color: var(--clr-s-150);
   font-family: var(--ff-primary);
   display: flex;
-  /* flex-direction: column;
-  align-items: center;
-  justify-content: center; */
 }
 
 img,
@@ -125,7 +123,6 @@ h6 {
 }
 
 .phone {
-  height: 40rem;
   background-color: var(--clr-s-200);
   border: 1rem solid var(--clr-s-100);
   border-radius: 2rem;
@@ -135,7 +132,7 @@ h6 {
 
 .user-heading {
   position: relative;
-  width: 20rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -200,6 +197,105 @@ h6 {
 .status-span {
   font-size: var(--fs-primary);
   color: var(--clr-p-text-100);
+}
+
+.texts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.me-text {
+  align-self: flex-start;
+  width: 60%;
+  background-color: var(--clr-p-text-100);
+  color: var(--clr-p-text-500);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+
+.dog-pictures {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+
+.dog-picture {
+  align-self: auto;
+  height: 5rem;
+  width: 5rem;
+  margin-right: 1rem;
+  border-radius: 1rem;
+}
+
+.you-text-1 {
+  align-self: flex-end;
+  width: 65%;
+  background-color: var(--clr-s-100);
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.you-text-2 {
+  align-self: flex-end;
+  width: auto;
+  background-color: var(--clr-s-100);
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.me-purple-text {
+  align-self: flex-start;
+  background: linear-gradient(
+    to left,
+    var(--clr-p-gradient-600),
+    var(--clr-p-text-300)
+  );
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  background-color: var(--clr-p-text-100);
+  color: var(--clr-s-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.app-icon-circle {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 1rem;
+  line-height: 4;
+}
+
+.walk-time-span {
+  margin-right: 2.5rem;
+}
+
+.price-span {
+  font-size: var(--fs-medium-heading);
+}
+
+.message-typing-box {
+
 }
 
 .paragraph {
