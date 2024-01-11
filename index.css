@@ -94,8 +94,8 @@ h6 {
   position: fixed;
   right: -10rem;
   bottom: 0;
-  border-top-left-radius: 15rem;
-  border-top-right-radius: 15rem;
+  border-top-left-radius: 20rem;
+  border-top-right-radius: 20rem;
 }
 
 .purple-blob {
@@ -109,8 +109,8 @@ h6 {
   position: absolute;
   left: -5rem;
   top: 0;
-  border-bottom-left-radius: 15rem;
-  border-bottom-right-radius: 15rem;
+  border-bottom-left-radius: 20rem;
+  border-bottom-right-radius: 20rem;
 }
 
 .front-items {
@@ -125,7 +125,7 @@ h6 {
 }
 
 .phone {
-  width: 28rem;
+  width: 20rem;
   background-color: var(--clr-s-200);
   border: 1rem solid var(--clr-s-100);
   border-radius: 2rem;
@@ -221,7 +221,8 @@ h6 {
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 0.5rem;
   padding: 0.5rem;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
+  font-size: var(--fs-primary);
 }
 
 .dog-pictures {
@@ -232,9 +233,9 @@ h6 {
 
 .dog-picture {
   align-self: auto;
-  height: 5rem;
-  width: 5rem;
-  margin-right: 1rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-right: 0.5rem;
   border-radius: 1rem;
 }
 
@@ -242,24 +243,28 @@ h6 {
   align-self: flex-end;
   width: 65%;
   background-color: var(--clr-s-100);
-  margin-right: 1rem;
+  margin-right: 0.5rem;
+
   padding: 0.5rem;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 1rem;
+  font-size: var(--fs-primary);
 }
 
 .you-text-2 {
   align-self: flex-end;
   width: auto;
   background-color: var(--clr-s-100);
-  margin-right: 1rem;
+  margin-right: 0.5rem;
+
   padding: 0.5rem;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 1rem;
+  font-size: var(--fs-primary);
 }
 
 .me-purple-text {
@@ -274,18 +279,19 @@ h6 {
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 0.5rem;
   padding: 0.5rem;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   background-color: var(--clr-p-text-100);
   color: var(--clr-s-100);
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: var(--fs-primary);
 }
 
 .app-icon-circle {
   height: 1.5rem;
   width: 1.5rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   line-height: 4;
 }
 
@@ -294,23 +300,24 @@ h6 {
 }
 
 .price-span {
-  font-size: var(--fs-medium-heading);
+  font-size: var(--fs-heading);
 }
 
 .message-typing-box {
   width: 92.5%;
   background-color: var(--clr-s-100);
   align-self: center;
-  margin: 1rem 0 1.25rem 0;
+  margin: 1rem 0 0.75rem 0;
   display: flex;
   align-items: center;
-  padding: 0.4rem 1rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 5rem;
 }
 
 .message-typing-box input {
   border: none;
   flex-grow: 1;
+  font-size: var(--fs-primary);
 }
 
 .message-typing-box-send-button {
@@ -367,11 +374,15 @@ h6 {
   .light-grey-blob {
     height: 55%;
     width: 60%;
+    border-top-left-radius: 15rem;
+    border-top-right-radius: 15rem;
   }
 
   .purple-blob {
     height: 55%;
     width: 60%;
+    border-bottom-left-radius: 15rem;
+    border-bottom-right-radius: 15rem;
   }
 
   .paragraph {
