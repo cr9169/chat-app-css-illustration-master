@@ -84,6 +84,7 @@ h6 {
   flex-direction: column;
   overflow-x: hidden;
   z-index: 1;
+  overflow-y: auto;
 }
 
 .light-grey-blob {
